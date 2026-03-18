@@ -6,7 +6,7 @@ import { ALL_QUESTIONS } from "./questions.js";
 // ═══════════════════════════════════════════════════════════════
 const SHEET_URL  = "https://script.google.com/a/macros/itu.edu.pk/s/AKfycbzgwPts137UmDZBLP6lIux6xNk8z8-F1UP6ebaDi2LunXGltiBxgp2J7kxbLR7V00ns/exec"; // paste your Apps Script URL
 const QUIZ_SIZE  = 15;   // questions per attempt (from pool of 30)
-const TIME_PER_Q = 60;   // seconds per question (60s — home attempt)
+const TIME_PER_Q = 30;   // seconds per question (60s — home attempt)
 const COURSE     = "CE210T · Application of ICT";
 const QUIZ_TITLE = "Lecture 3 Quiz";
 const QUIZ_SUB   = "CPU Architecture · Memory · Machine Cycle";
@@ -121,7 +121,7 @@ function RegisterScreen({ onStart }) {
           <p style={{ color: C.muted, fontSize: 13, marginBottom: 32, lineHeight: 1.6 }}>{QUIZ_SUB}</p>
 
           <FieldInput label="FULL NAME" value={name} onChange={e => setName(e.target.value)} placeholder="e.g. Ali Hassan" onKeyDown={e => e.key === "Enter" && go()} />
-          <FieldInput label="ROLL NUMBER" value={roll} onChange={e => setRoll(e.target.value)} placeholder="e.g. 23-CE-001" onKeyDown={e => e.key === "Enter" && go()} />
+          <FieldInput label="ROLL NUMBER" value={roll} onChange={e => setRoll(e.target.value)} placeholder="e.g. BSCEXXXXX" onKeyDown={e => e.key === "Enter" && go()} />
 
           {error && <div style={{ background: "#1f0909", border: `1px solid #4a1a1a`, borderRadius: 8, padding: "12px 16px", marginBottom: 20, color: C.danger, fontSize: 12, lineHeight: 1.6 }}>⚠ {error}</div>}
 
