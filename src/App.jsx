@@ -4,7 +4,7 @@ import { ALL_QUESTIONS } from "./questions.js";
 // ═══════════════════════════════════════════════════════════════
 //  🔧 CONFIGURATION — only edit these lines
 // ═══════════════════════════════════════════════════════════════
-const SHEET_URL   = "Yhttps://script.google.com/a/macros/itu.edu.pk/s/AKfycbzgwPts137UmDZBLP6lIux6xNk8z8-F1UP6ebaDi2LunXGltiBxgp2J7kxbLR7V00ns/exec";
+const SHEET_URL   = "https://script.google.com/a/macros/itu.edu.pk/s/AKfycbzgwPts137UmDZBLP6lIux6xNk8z8-F1UP6ebaDi2LunXGltiBxgp2J7kxbLR7V00ns/exec";
 const QUIZ_SIZE   = 15;
 const TIME_PER_Q  = 30;
 const COURSE      = "CE210T · Application of ICT";
