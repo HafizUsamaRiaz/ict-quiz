@@ -4,7 +4,7 @@ import { ALL_QUESTIONS } from "./questions.js";
 // ═══════════════════════════════════════════════════════════════
 //  🔧 CONFIGURATION
 // ═══════════════════════════════════════════════════════════════
-const SHEET_URL  = "YOUR_APPS_SCRIPT_URL_HERE"; // paste your Apps Script URL
+const SHEET_URL  = "https://script.google.com/a/macros/itu.edu.pk/s/AKfycbzgwPts137UmDZBLP6lIux6xNk8z8-F1UP6ebaDi2LunXGltiBxgp2J7kxbLR7V00ns/exec"; // paste your Apps Script URL
 const QUIZ_SIZE  = 15;   // questions per attempt (from pool of 30)
 const TIME_PER_Q = 60;   // seconds per question (60s — home attempt)
 const COURSE     = "CE210T · Application of ICT";
